@@ -1,0 +1,12 @@
+DROP TABLE `chillhub`.`account` CASCADE;
+
+CREATE TABLE `chillhub`.`account`(
+	`account_id` INT NOT NULL AUTO_INCREMENT,
+	`username` VARCHAR(255) NOT NULL,
+	`hashed_password` VARCHAR(255) NOT NULL,
+	`email` VARCHAR(255) NOT NULL,
+	`rank` INT NOT NULL,
+	PRIMARY KEY(`account_id`)
+);
+
+commit;
