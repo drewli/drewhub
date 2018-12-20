@@ -60,11 +60,6 @@ public class AccountController {
 			throw new RuntimeException("Error");
 		}
 	}
-
-	@PutMapping(value="/{id}", produces=MediaType.TEXT_PLAIN_VALUE)
-	public String server(@PathVariable Integer id) {
-		return System.getenv("TEST_VAR");
-	}
 	
 	@DeleteMapping(value="/{id}")
 	public ResponseEntity<Account> delete(@PathVariable("id") Integer id) {
